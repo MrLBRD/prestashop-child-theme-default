@@ -1,0 +1,1 @@
+# prestashop-child-theme-default
