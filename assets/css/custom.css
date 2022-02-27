@@ -1,0 +1,180 @@
+/* Entrez le CSS personnalisé de votre thème enfant ici */
+
+/* MENU */
+#header .top-menu a[data-depth="0"]:hover {
+    color: #2d5335;
+}
+
+#header a:hover {
+    color: #2d5335;
+}
+
+#header .header-nav .cart-preview.active {
+    background: #2d5335;
+}
+
+.search-widget form button[type=submit] .search:hover {
+    color: #2d5335;
+}
+
+.search-widget form input[type=text]:focus {
+    outline: 3px solid #2d5335;
+}
+
+.search-widget form input[type=text]:focus+button .search {
+    color: #2d5335;
+}
+
+/* Home page */
+
+.carousel .carousel-control .icon-next:hover i, .carousel .carousel-control .icon-prev:hover i {
+    color: #2d5335;
+}
+
+.pagination .current a {
+    color: #698f5b;
+}
+
+/* Product page */
+.block-category {
+    min-height: 0;
+    margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 765px) {
+    #subcategories {
+        display: none;
+    }
+}
+#subcategories ul {
+    justify-content: space-between;
+}
+.product-price {
+    color: #2d5335;
+}
+
+.btn-primary, .btn-primary:disabled:hover {
+    background-color: #2d5335;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.btn-primary.dropdown-toggle {
+    background-color: #698f5b;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+    background-color: #698f5b;
+}
+
+.tabs .nav-tabs .nav-link.active {
+    color: #2d5335;
+}
+
+.tabs .nav-tabs .nav-link.active, .tabs .nav-tabs .nav-link:hover {
+    border-bottom: 3px solid #2d5335;
+}
+
+#blockcart-modal .product-name {
+    color: #2d5335;
+}
+
+#products .highlighted-informations .quick-view:hover, .featured-products .highlighted-informations .quick-view:hover, .product-accessories .highlighted-informations .quick-view:hover, .product-miniature .highlighted-informations .quick-view:hover {
+    color: #2d5335;
+}
+
+.form-control:focus, .input-group.focus {
+    outline: .1875rem solid #2d5335;
+}
+
+.product-images>li.thumb-container>.thumb.selected, .product-images>li.thumb-container>.thumb:hover {
+    border: 3px solid #2d5335
+}
+
+/* */
+.brands-sort .select-list:hover, .products-sort-order .select-list:hover, .suppliers-sort .select-list:hover {
+    background: #2d5335;
+}
+
+/* FOOTER */
+
+.block-social ul li:hover {
+    background-color: #2d5335;
+}
+
+a {
+    color: #2d5335;
+}
+
+a:hover {
+    color: #2d5335;
+}
+
+.footer-container li a:hover {
+    color: #2d5335;
+}
+
+.facebook.icon-gray:hover{
+    background-image:url(../css/facebooksvgiconvert698f5b.svg);
+}
+.twitter.icon-gray:hover{
+    background-image:url(../css/twittersvgvert698f5b.svg);
+}
+.pinterest.icon-gray:hover{
+    background-image:url(../css/pinterestsvgvert698f5b.svg);
+}
+
+.linkedin {
+    background-image: url(../css/linkedinqsvgwhiteffffff.svg);
+}
+
+
+li.product-flag.lowstock {
+    z-index: 2;
+    background-color: #df4d42 !important;
+}
+
+li.product-flag.out_of_stock {
+    background-color: #636363 !important;
+}
+
+.oos-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+#subcategories ul li:hover .subcategory-image a {
+    border: 5px solid #698f5b;
+}
+
+#subcategories ul li .subcategory-name:hover {
+    color: #698f5b;
+}
+
+.product-price .product-unit-price.sub {
+    color: #698f5b;
+}
+
+.logo.img-responsive {
+    width: 100%;
+}
+
+#_desktop_logo {
+    padding-right: 0;
+}
+
+button.submit {
+    cursor: pointer;
+}
+
+span.gasconOrdered {
+    color: #df4d42;
+}
+
+div.products.row {
+    justify-content: space-around;
+}
