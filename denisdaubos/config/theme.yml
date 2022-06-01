@@ -1,0 +1,125 @@
+parent: classic
+name: ddcp-theme
+display_name: Thème enfant DDCP
+version: 1.8.1
+author:
+  name: "Arnaud Laborde"
+  email: "contact@arnaudlaborde.fr"
+  url: "https://www.arnaudlaborde.fr"
+
+assets:
+  use_parent_assets: true
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+  modules:
+   to_enable:
+     - ps_linklist
+  hooks:
+    modules_to_hook:
+      displayAfterBodyOpeningTag:
+        - blockreassurance
+      displayNavFullWidth:
+        - blockreassurance
+      displayNav1:
+        - ps_contactinfo
+      displayNav2:
+        - ps_languageselector
+        - ps_currencyselector
+        - ps_customersignin
+        - ps_shoppingcart
+      displayTop:
+        - ps_mainmenu
+        - ps_searchbar
+      displayHome:
+        - ps_imageslider
+        - ps_featuredproducts
+        - ps_banner
+        - ps_customtext
+      displayFooterBefore:
+        - blockreassurance
+        - ps_emailsubscription
+        - ps_socialfollow
+      displayFooter:
+        - ps_linklist
+        - ps_customeraccountlinks
+        - ps_contactinfo
+      displayFooterAfter:
+        - blockreassurance
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+      displaySearch:
+        - ps_searchbar
+      displayProductAdditionalInfo:
+        - ps_sharebuttons
+      displayReassurance:
+        - blockreassurance
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+
+  image_types:
+    cart_default:
+      width: 125
+      height: 125
+      scope: [products]
+    small_default:
+      width: 98
+      height: 98
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 250
+      height: 250
+      scope: [products]
+    large_default:
+      width: 800
+      height: 800
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 141
+      height: 180
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+    product_second_default:
+      width: 640
+      height: 380
+      scope: [products]
+    product_third_default:
+      width: 645
+      height: 320
+      scope: [products]
+    category_header_sm:
+      width: 560
+      height: 210
+      scope: [categories]
+    category_header_md:
+      width: 720
+      height: 270
+      scope: [categories]
+    category_header_lg:
+      width: 1080
+      height: 405
+      scope: [categories]
+    category_header_xl:
+      width: 1920
+      height: 720
+      scope: [categories]
+    
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-full-width
+    best-sales: layout-full-width
+    new-products: layout-full-width
+    prices-drop: layout-left-column
+    contact: layout-left-column
