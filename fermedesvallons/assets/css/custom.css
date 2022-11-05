@@ -178,3 +178,86 @@ span.gasconOrdered {
 div.products.row {
     justify-content: space-around;
 }
+
+/* CMS */
+
+div.cms-cardscontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+}
+
+div.cms-card {
+    box-shadow: 0.125rem 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+}
+
+a.cms-cardimg {
+    width: 100%;
+}
+a.cms-cardimg > img {
+    width: 100%;
+}
+
+div.cms-cardtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+}
+div.cms-cardtitle > a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {    
+    div.cms-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {    
+    div.cms-card {
+        width: calc(100% / 2 - 12px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.cms-card {
+        width: calc(100% / 3 - 16px);
+    }
+}
+
+div.head-recipepage {
+    display: flex;
+    gap: 32px;
+}
+div.head-recipepage:first-child {
+    align-self: stretch;
+    flex-grow: 1;
+}
+div.head-recipepage:last-child {
+    width: fit-content;
+}
+
+table.timearray-recipepage {
+    width: 100%;
+    max-width: 380px;
+}
+.timearray-recipepage tr td {
+    padding: 8px 0;
+}
+.timearray-recipepage tr td p {
+    margin: 0;
+}
+
+ol.instructionlist-recipepage {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: flex-start;
+}
