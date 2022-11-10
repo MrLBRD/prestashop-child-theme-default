@@ -183,17 +183,19 @@ div.products.row {
 
 div.cms-cardscontainer {
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
     gap: 24px 24px;
 }
 
 div.cms-card {
     box-shadow: 0.125rem 0.125rem 0.25rem 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
 }
 
 a.cms-cardimg {
     width: 100%;
+    height: fit-content;
 }
 a.cms-cardimg > img {
     width: 100%;
@@ -206,6 +208,8 @@ div.cms-cardtitle {
     justify-content: center;
     text-align: center;
     padding: 8px 12px;
+    align-self: stretch;
+    flex-grow: 1;
 }
 div.cms-cardtitle > a {
     width: 100%;

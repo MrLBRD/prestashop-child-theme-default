@@ -49,7 +49,7 @@
             <p>{l s='List of pages in %category_name%:' d='Shop.Theme.Global' sprintf=['%category_name%' => $cms_category.name]}</p>
             <p>{$cms_category.description}</p>
             <div class="cms-cardscontainer">
-                {foreach from=$cms_pages item=cms_page}
+                {foreach from=$cms_pages|@array_reverse item=cms_page}
                     <div class="cms-card">
                         <a
                             class="cms-cardimg"
