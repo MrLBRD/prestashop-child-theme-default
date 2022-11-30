@@ -1,6 +1,6 @@
 parent: classic
 name: fdv-classicchild
 display_name: Ferme des Vallons par Arnaud Laborde
-version: 1.4.1
+version: 1.4.2
 assets:
   use_parent_assets: true

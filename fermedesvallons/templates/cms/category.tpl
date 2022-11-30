@@ -54,8 +54,15 @@
                         <a
                             class="cms-cardimg"
                             href="{$cms_page.link}"
-                            title="{$cms_page.meta_title}">
-                            <img class="img-fluid" src="{$urls.img_ps_url}cms/recipes/{$cms_page.id_cms}.png" alt="">
+                            title="{$cms_page.meta_title}"
+                            >
+                            <img
+                                class="img-fluid"
+                                srcset="{$urls.img_ps_url}cms/recipes/{$cms_page.id_cms}-small.png 360w
+                                        {$urls.img_ps_url}cms/recipes/{$cms_page.id_cms}.png 540w"
+                                src="{$urls.img_ps_url}cms/recipes/{$cms_page.id_cms}.png"
+                                alt="Photo de la recette : {$cms_page.meta_title}"
+                                >
                         </a>
                         <div class="cms-cardtitle">
                             <a
