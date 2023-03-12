@@ -47,7 +47,7 @@
     {block name='cms_sub_pages'}
         {if $cms_pages}
             <p>{l s='List of pages in %category_name%:' d='Shop.Theme.Global' sprintf=['%category_name%' => $cms_category.name]}</p>
-            <p>{$cms_category.description}</p>
+            <p>{$cms_category.description nofilter}</p>
             <div class="cms-cardscontainer">
                 {foreach from=$cms_pages|@array_reverse item=cms_page}
                     <div class="cms-card">

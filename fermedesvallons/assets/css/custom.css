@@ -135,6 +135,12 @@ a:hover {
     background-image: url(../css/linkedinqsvgwhiteffffff.svg);
 }
 
+.product-miniature .thumbnail-container:hover .highlighted-informations.no-variants {
+    top: calc(100% - 7.2rem);
+}
+.product-miniature .highlighted-informations {
+    z-index: 0;
+}
 
 li.product-flag.lowstock {
     z-index: 2;
@@ -145,17 +151,11 @@ li.product-flag.out_of_stock {
     background-color: #636363 !important;
 }
 
-.oos-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: fit-content;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.4;
-    z-index: 1;
+.img-fluid.oos-blur {
+    filter: blur(1px) brightness(0.4) sepia(0.5);
+    -webkit-filter: blur(1px) brightness(0.4) sepia(0.5);
 }
+/* filter: blur(1px) brightness(0.4) sepia(0.5); */
 
 #subcategories ul li:hover .subcategory-image a {
     border: 5px solid #698f5b;
@@ -375,4 +375,61 @@ div.body-recipepage-doublerecipe {
     div.body-recipepage-doublerecipe > div {
         width: 50%;
     }
+}
+
+/* Calendrier marchés et évènements */
+
+div#timeline-container {
+    width: 100%;
+}
+
+div#timeline-container svg {
+    width: 100%;
+}
+
+div#timeline-container #months-container {
+    display: flex;
+    width: 100%;
+    padding: 0 1.58%;
+    justify-content: space-around;
+}
+
+div#timeline-container #months-container div {
+    width: calc(100% / 12);
+    text-align: center;
+}
+
+#littlePig, #paint0_linear_544_5279 {
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+}
+
+div#monthsInfos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 48px 0;
+    cursor: default;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+details {
+    opacity: .7;
+}
+
+details[open] {
+    opacity: 1;
+}
+
+details::after {
+    content: 'Événement déjà passé - ↑ cliquer pour voir plus ↑';
+    opacity: .6;
+    font-weight: 700;
+}
+
+details[open]::after {
+    content: '';
 }
