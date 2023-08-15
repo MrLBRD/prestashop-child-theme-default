@@ -152,8 +152,8 @@ li.product-flag.out_of_stock {
 }
 
 .img-fluid.oos-blur {
-    filter: blur(1px) brightness(0.4) sepia(0.5);
-    -webkit-filter: blur(1px) brightness(0.4) sepia(0.5);
+    filter: brightness(0.8) grayscale(1);
+    -webkit-filter: brightness(0.8) grayscale(1);
 }
 /* filter: blur(1px) brightness(0.4) sepia(0.5); */
 
